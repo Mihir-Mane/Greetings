@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img src="texture.jpg" id="texture">
+        </a-assets>
+        <a-box src="#texture" width="2" height="3" depth="2">
+            <a-animation attribute="rotation" repeat="indefinite" to="0 180 0"></a-animation>
+        </a-box>
+    </a-scene>
+</body>
+</html>
